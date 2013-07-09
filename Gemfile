@@ -22,7 +22,12 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'posix_mq', '~>2.0.0'
+end	
+
 gem 'afstatsd'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
