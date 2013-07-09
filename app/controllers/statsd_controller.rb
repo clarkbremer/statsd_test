@@ -1,5 +1,4 @@
 
-$statsd = Statsd.new
 
 class StatsdController < ApplicationController
   def index

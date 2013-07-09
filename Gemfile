@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'afstatsd', :path => '/Users/tim/Linux/statsd_test/'
+gem 'afstatsd', '0.0.4'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
