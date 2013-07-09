@@ -1,0 +1,6 @@
+<h1>Mash the button to increment a Statsd Counter</h1>
+<%= form_tag("/statsd/event", :method => "post") do %>
+  <%= label_tag(:q, "Counter Name:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Increment") %>
+<% end %>
