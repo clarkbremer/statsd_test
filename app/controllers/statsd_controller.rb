@@ -8,7 +8,6 @@ class StatsdController < ApplicationController
   	metric = params[:q]
   	puts "got statsd increment for #{metric}"
     $statsd.increment metric
-    error_notice
   	flash[:notice] = "statsd event sent"
   	redirect_to statsd_index_url
 
