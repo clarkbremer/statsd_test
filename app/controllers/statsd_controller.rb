@@ -7,7 +7,7 @@ class StatsdController < ApplicationController
   def event
   	metric = params[:q]
   	puts "got statsd increment for #{metric}"
-    $statsd.increment metric
+    $statsd.increment 'test.ruby.hardcoded'
   	flash[:notice] = "statsd event sent"
   	redirect_to statsd_index_url
 
