@@ -60,6 +60,6 @@ module StatsdTest
     config.assets.version = '1.0'
 
     # statsd 
-    $statsd = Statsd.new
+    $statsd = Statsd.new '10.7.7.38', 8125
   end
 end
