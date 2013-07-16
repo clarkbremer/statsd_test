@@ -22,6 +22,8 @@ GEM
       activesupport (= 3.2.12)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-postgresql-adapter (0.0.1)
+      pg
     activeresource (3.2.12)
       activemodel (= 3.2.12)
       activesupport (= 3.2.12)
@@ -54,7 +56,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.7)
-    pg (0.14.1-x86-mingw32)
+    pg (0.15.1)
+    pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
     posix_mq (2.0.0)
     rack (1.4.5)
@@ -109,10 +112,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  activerecord-postgresql-adapter
   afstatsd
   coffee-rails (~> 3.2.1)
   jquery-rails
-  pg
   posix_mq (~> 2.0.0)
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

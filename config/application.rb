@@ -61,5 +61,6 @@ module StatsdTest
 
     # statsd 
     $statsd = Statsd.new '10.7.7.38', 8125
+    #$statsd.aggregating=false
   end
 end
