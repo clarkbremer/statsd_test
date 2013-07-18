@@ -59,8 +59,8 @@ module StatsdTest
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # statsd 
+    # afstatsd 
     $statsd = Statsd.new '10.7.7.38', 8125
-    #$statsd.aggregating=false
+    $statsd.aggregating=false
   end
 end
