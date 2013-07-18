@@ -9,7 +9,7 @@ class StatsdController < ApplicationController
   	@metric = params[:q]
   	puts "got statsd increment for #{@metric}"
     1.times do
-      $statsd.increment @metric
+      #$statsd.increment @metric
     end  
   	flash[:notice] = "statsd event sent: (#{@metric})"
     respond_to do |format|

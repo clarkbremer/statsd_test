@@ -60,7 +60,7 @@ module StatsdTest
     config.assets.version = '1.0'
 
     # afstatsd 
-    $statsd = Statsd.new '10.7.7.38', 8125
-    $statsd.aggregating=false
+    $statsd = Statsd.new 'localhost', 8125, 0
+    #$statsd.aggregating=false
   end
 end
