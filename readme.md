@@ -9,8 +9,8 @@ in `Gemfile` (assuming your development environment might be non-posix):
 
 in `config/application.rb:`
 
-    $statsd = Statsd.new
-    $statsd.aggregating = false
+    $mystatsd = Statsd.new
+    $mystatsd.aggregating = false
 
 Then with bundler:
 

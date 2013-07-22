@@ -60,7 +60,9 @@ module StatsdTest
     config.assets.version = '1.0'
 
     # afstatsd 
-    $statsd = Statsd.new 'localhost', 8125, 0
-    #$statsd.aggregating=false
+    Statsd.logger ||= Logger.new 'afstatsd.log'
+    Statsd.logger.level = Logger::DEBUG
+    $mystatsd = Statsd.new 
+    #$mystatsd.aggregating=false
   end
 end
