@@ -4,8 +4,8 @@
 
 in `Gemfile` (assuming your development environment might be non-posix):
 
-    group :production do
-      gem ‘posix_mq’, ‘~>2.0.0’
+    if RUBY_PLATFORM =~ /linux/i
+      gem 'posix_mq', '~>2.0.0'
     end
     gem ‘afstatsd’
 

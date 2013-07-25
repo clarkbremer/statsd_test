@@ -26,9 +26,9 @@ end
 
 gem 'jquery-rails'
 
-group :production do
+if RUBY_PLATFORM =~ /linux/i
   gem 'posix_mq', '~>2.0.0'
-end	
+end
 
 gem 'afstatsd'
 
