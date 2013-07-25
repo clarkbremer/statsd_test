@@ -59,6 +59,7 @@ GEM
     pg (0.15.1)
     pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
+    posix_mq (2.0.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -115,6 +116,7 @@ DEPENDENCIES
   afstatsd
   coffee-rails (~> 3.2.1)
   jquery-rails
+  posix_mq (~> 2.0.0)
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   sqlite3
